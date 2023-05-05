@@ -1,4 +1,5 @@
-# SAP_UI5_Data_Binding
+![This is an image](https://camo.githubusercontent.com/79cc251c5c489cb14c432e4861bec5c9e679e925c975f3625ab1e64984bf90ff/68747470733a2f2f6f70656e7569352e6f72672f696d616765732f4f70656e5549355f6e65775f6269675f736964652e706e67)
+# SAP UI5 Data Binding
 
 Configurar o projeto
 
@@ -22,4 +23,25 @@ ui5 use sapui5@latest
 Para iniciar o servidor via terminal execute o comando:
 ```
 ui5 serve
+```
+
+**Observação** para se rodar os comandos de ui5 acima no Windowa e imprimir o seguinte erro:
+```
+ui5 : The term 'ui5' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ui5 --help
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (ui5:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+```
+Deve-se rodar os comandos com o npx antes:
+```
+npx ui5 init
+```
+```
+npx ui5 use sapui5@latest
+```
+```
+npx ui5 serve
 ```
