@@ -2,9 +2,10 @@ sap.ui.require(
     [
         "sap/m/Text",
         "sap/ui/model/json/JSONModel",
-        "sap/ui/core/mvc/XMLView"
+        "sap/ui/core/mvc/XMLView",
+        "sap/ui/model/BindingMode"
     ],
-    function (Text, JSONModel, XMLView) {
+    function (Text, JSONModel, XMLView, BindingMode) {
         // Anexa uma função anônima ao evento SAPUI5 'init'
         sap.ui.getCore().attachInit(
             function () {
@@ -17,6 +18,8 @@ sap.ui.require(
                         panelHeaderText: "Data Biunding Basics"
                     }
                 );
+                
+                oModel.setDefaultBindingMode(BindingMode.OneWay);
 
                 // Atribui o objeto modelo ao núcleo SAPUI5
                 sap.ui.getCore().setModel(oModel);
