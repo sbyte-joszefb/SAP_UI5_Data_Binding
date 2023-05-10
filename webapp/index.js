@@ -16,6 +16,12 @@ sap.ui.require(
                         firstName: "Obiwan",
                         lastName: "Kenobi",
                         enabled: true,
+                        address: {
+                            street: "1 Any Lane",
+                            city: "Walldorf",
+                            zip: "69190",
+                            country: "Germany"
+                        },
                         panelHeaderText: "Data Biunding Basics"
                     }
                 );
