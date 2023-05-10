@@ -10,16 +10,17 @@ sap.ui.require(
                 // Cria um modelo JSON a partir de um objeto literal
                 var oModel = new JSONModel(
                     {
-                        greetingText:"Hi. My name is ... SAP UI5"
+                        greetingText:"Olá. meu nome é ... SAP UI5"
                     }
                 );
 
                 // Atribui o objeto modelo ao núcleo SAPUI5
                 sap.ui.getCore().setModel(oModel);
 
-                // Cria um elemento de UI de texto que exibe uma string de texto codificada
+                // Exibir um elemento de texto cujo texto é derivado
+                // do objeto modelo
                 new Text({
-                    text: "Ola mundo! Sou uma aplição SAP UI5"
+                    text: "{/greetingText}"
                 }).placeAt("content");
             }
         )
