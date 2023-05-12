@@ -10,6 +10,11 @@ sap.ui.require(
         // Anexa uma função anônima ao evento SAPUI5 'init'
         sap.ui.getCore().attachInit(
             function () {
+
+                var oProductModel = new JSONModel();
+                oProductModel.loadData("./model/products.json");
+                sap.ui.getCore().setModel(oProductModel, "products");
+
                 // Cria um modelo JSON a partir de um objeto literal
                 var oModel = new JSONModel(
                     {
