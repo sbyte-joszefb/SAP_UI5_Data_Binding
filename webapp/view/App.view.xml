@@ -11,7 +11,7 @@
         width="auto"
     >
         <form:SimpleForm
-            editbale="true"
+            editable="true"
             layout="ColumnLayout"
         >
             <Label text="{i18n>firstName}"/>
@@ -62,7 +62,7 @@
             </l:VerticalLayout>
             <l:VerticalLayout>
                 <Label 
-                    laberFor="salesAmout"
+                    labelFor="salesAmout"
                     text="{i18n>salesAmount}:"
                 />
                 <Input
